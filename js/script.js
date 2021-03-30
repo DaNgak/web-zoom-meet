@@ -43,4 +43,4 @@ jumat.addEventListener("click", () => {
     document.body.style.backgroundImage = "url('img/gambarlari.jpg')";
 });
 
-alert("Untuk Materi Masih ada yang belum selesai\n Belum Responsive");
+// alert("1. Untuk Materi masih ada yang belum selesai\n2. Belum Responsive Untuk HP\n3. Link Zoom sudah di update");

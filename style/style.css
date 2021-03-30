@@ -95,11 +95,12 @@ nav {
 
 .box-day {
     width: 100%;
-    height: inherit;
+    /* height: inherit; */
+    min-height: 85vh;
     overflow: auto;
 }
 .box-day h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f3f3f3;
     text-shadow: 3px 10px 8px rgba(13, 110, 253, 0.7), 0px -5px 16px rgba(13, 202, 240, 0.8);
 }
@@ -154,14 +155,17 @@ nav {
 }
 
 .main-content-satu ul.dropdown-menu {
+    border-radius: 1rem;
     width: 100%;
     padding: 0;
     text-align: center;
 }
+
 .main-content-satu ul.dropdown-menu li.pembatas {
-    height: max-content;
     border-bottom: 1px solid black;
+    margin: 0 10px;
 }
+
 .main-content-satu ul.dropdown-menu li.pembatas a.dropdown-item {
     font-weight: normal;
     font-size: 1.5rem;
@@ -180,7 +184,7 @@ nav {
     width: 100%;
     height: 0%;
     display: block;
-    background: #43e1ec;
+    /* background: #43e1ec; */
     position: absolute;
     left: 0%;
     opacity: 0;
@@ -195,9 +199,9 @@ nav {
 }
 
 .animasi-hover:hover {
-    color: white;
+    color: aliceblue;
     box-shadow: inset 00px 100px 0px 0px rgb(13, 202, 240);
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* Akhir SideBar Kiri */
@@ -284,6 +288,7 @@ form {
 
 .box-materi {
     width: 100%;
+    min-height: 85vh;
     background: linear-gradient(rgb(79, 196, 196), lightblue);
     margin: 500px 0;
     display: flex;
@@ -300,7 +305,7 @@ form {
 }
 .box-materi ul {
     padding: 0;
-    margin: 0;
+    margin: 0 0 2rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -308,10 +313,13 @@ form {
     flex-direction: column;
 }
 
+.box-materi h3.tidakadamateri {
+    font-size: 3rem;
+}
+
 .box-materi ul li {
     overflow: hidden;
     width: 80%;
-    height: 3rem;
     margin: 20px 0;
     border: 2px solid blue;
     box-shadow: 0px 0px 10px #6fbee6;
@@ -319,19 +327,20 @@ form {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    transition: all 0.7s ease;
+    transition: all 0.7s;
+    transition-timing-function: cubic-bezier(0.5, 2.5, 1, 3);
 }
-#alin {
-    height: 85vh;
-}
+
 .box-materi ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1rem;
     font-size: 1rem;
-    padding: 1rem 2rem;
 }
-.box-materi ul li a:hover {
-    transform: scale(1.1);
-    font-size: 1.1rem;
-    font-weight: 700;
+
+.box-materi ul li:hover {
+    transform: scale(1.05);
+    font-size: 1.4rem;
 }
 
 /* Awal Footer */
