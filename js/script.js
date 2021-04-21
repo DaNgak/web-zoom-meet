@@ -15,38 +15,40 @@ const nama = document.getElementById("nama");
 const email = document.getElementById("email");
 const message = document.getElementById("message-pesan");
 
+const buttonhome = document.querySelector("#home .container-sm .collapse ul li.nav-item a.tombolhome");
 const buttonrateus = document.querySelector("#home .container-sm .collapse ul li.nav-item a.tombolrateus");
 const buttonsenin = document.querySelector("ul.dropdown-menu li.pembatas a.hari-senin");
 const buttonselasa = document.querySelector("ul.dropdown-menu li.pembatas a.hari-selasa");
 const buttonrabu = document.querySelector("ul.dropdown-menu li.pembatas a.hari-rabu");
 const buttonkamis = document.querySelector("ul.dropdown-menu li.pembatas a.hari-kamis");
 const buttonjumat = document.querySelector("ul.dropdown-menu li.pembatas a.hari-jumat");
-const buttonalgoprak = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-algoprak");
-const buttonalgoteo = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-algoteo");
-const buttonbahasaenggres = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-bahasaenggres");
-const buttonbasdatprak = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-basdatprak");
-const buttonbasdatteo = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-basdatteo");
-const buttonsistemope = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-sistemope");
-const buttonrpl = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-rpl");
-const buttonagama = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-agama");
-const buttonalin = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-alin");
-const buttonkwn = document.querySelector("div.dropdown ul.dropdown-menu li.pembatas a.matkul-kwn");
+const buttonalgoprak = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-algoprak");
+const buttonalgoteo = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-algoteo");
+const buttonbahasaenggres = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-bahasaenggres");
+const buttonbasdatprak = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-basdatprak");
+const buttonbasdatteo = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-basdatteo");
+const buttonsistemope = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-sistemope");
+const buttonrpl = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-rpl");
+const buttonagama = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-agama");
+const buttonalin = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-alin");
+const buttonkwn = document.querySelector("ul.dropdown-menu li.pembatas a.matkul-kwn");
+const tampilhome = document.getElementById("home-page");
 const tampilrateus = document.getElementById("kontak-saran");
 const tampilsenin = document.getElementById("senin");
 const tampilselasa = document.getElementById("selasa");
 const tampilrabu = document.getElementById("rabu");
 const tampilkamis = document.getElementById("kamis");
 const tampiljumat = document.getElementById("jumat");
-const tampilalgoprak = document.getElementById("#algoprak");
-const tampilalgoteo = document.getElementById("#algoteo");
-const tampilbahasaenggres = document.getElementById("#bahasaenggres");
-const tampilbasdatprak = document.getElementById("#basdatprak");
-const tampilbasdatteo = document.getElementById("#basdatteo");
-const tampilsistemope = document.getElementById("#sistemope");
-const tampilrpl = document.getElementById("#rpl");
-const tampilagama = document.getElementById("#agama");
-const tampilalin = document.getElementById("#alin");
-const tampilkwn = document.getElementById("#kwn");
+const tampilalgoprak = document.getElementById("algoprak");
+const tampilalgoteo = document.getElementById("algoteo");
+const tampilbahasaenggres = document.getElementById("bahasaenggres");
+const tampilbasdatprak = document.getElementById("basdatprak");
+const tampilbasdatteo = document.getElementById("basdatteo");
+const tampilsistemope = document.getElementById("sistemope");
+const tampilrpl = document.getElementById("rpl");
+const tampilagama = document.getElementById("agama");
+const tampilalin = document.getElementById("alin");
+const tampilkwn = document.getElementById("kwn");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -145,53 +147,72 @@ for (let index = 0; index < boxdatacs.length; index++) {
 }
 
 buttonrateus.addEventListener("click", () => {
-    tampilrateus.classList.toggle("d-none");
+    tampilrateus.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonsenin.addEventListener("click", () => {
-    tampilsenin.classList.toggle("d-none");
+    tampilsenin.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonselasa.addEventListener("click", () => {
-    tampilselasa.classList.toggle("d-none");
+    tampilselasa.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonrabu.addEventListener("click", () => {
-    tampilrabu.classList.toggle("d-none");
-    s;
+    tampilrabu.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonkamis.addEventListener("click", () => {
-    tampilkamis.classList.toggle("d-none");
+    tampilkamis.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonjumat.addEventListener("click", () => {
-    tampiljumat.classList.toggle("d-none");
+    tampiljumat.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonalgoprak.addEventListener("click", () => {
-    tampilalgoprak.classList.toggle("d-none");
+    tampilalgoprak.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonalgoteo.addEventListener("click", () => {
-    tampilalgoteo.classList.toggle("d-none");
+    tampilalgoteo.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonbahasaenggres.addEventListener("click", () => {
-    tampilbahasaenggres.classList.toggle("d-none");
+    tampilbahasaenggres.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonbasdatprak.addEventListener("click", () => {
-    tampilbasdatprak.classList.toggle("d-none");
+    tampilbasdatprak.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonbasdatteo.addEventListener("click", () => {
-    tampilbasdatteo.classList.toggle("d-none");
+    tampilbasdatteo.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonsistemope.addEventListener("click", () => {
-    tampilsistemope.classList.toggle("d-none");
+    tampilsistemope.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonrpl.addEventListener("click", () => {
-    tampilrpl.classList.toggle("d-none");
+    tampilrpl.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonagama.addEventListener("click", () => {
-    tampilagama.classList.toggle("d-none");
+    tampilagama.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonalin.addEventListener("click", () => {
-    tampilalin.classList.toggle("d-none");
+    tampilalin.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
 });
 buttonkwn.addEventListener("click", () => {
-    tampilkwn.classList.toggle("d-none");
+    tampilkwn.classList.remove("d-none");
+    tampilhome.classList.add("d-none");
+});
+
+buttonhome.addEventListener("click", () => {
+    tampilhome.classList.toggle("d-none");
 });
 
 // Akhir set
@@ -203,31 +224,31 @@ if (hari === 1) {
     day.innerHTML = "Monday";
     button.setAttribute("href", "#senin");
     day.addEventListener("click", () => {
-        tampilsenin.classList.toggle("d-none");
+        tampilsenin.classList.remove("d-none");
     });
 } else if (hari === 2) {
     day.innerHTML = "Tuesday";
     button.setAttribute("href", "#selasa");
     day.addEventListener("click", () => {
-        tampilselasa.classList.toggle("d-none");
+        tampilselasa.classList.remove("d-none");
     });
 } else if (hari === 3) {
     day.innerHTML = "Wednesday";
     button.setAttribute("href", "#rabu");
     day.addEventListener("click", () => {
-        tampilrabu.classList.toggle("d-none");
+        tampilrabu.classList.remove("d-none");
     });
 } else if (hari === 4) {
     day.innerHTML = "Thursday";
     button.setAttribute("href", "#kamis");
     day.addEventListener("click", () => {
-        tampilkamis.classList.toggle("d-none");
+        tampilkamis.classList.remove("d-none");
     });
 } else if (hari === 5) {
     day.innerHTML = "Friday";
     button.setAttribute("href", "#jumat");
     day.addEventListener("click", () => {
-        tampiljumat.classList.toggle("d-none");
+        tampiljumat.classList.remove("d-none");
     });
 } else if (hari === 6) {
     day.innerHTML = "Saturday";
@@ -236,23 +257,18 @@ if (hari === 1) {
 }
 
 background1.addEventListener("click", () => {
-    // document.body.style.backgroundImage = "url('img/gambarkota.jpg')";
     document.body.style.background = "linear-gradient(125deg, rgb(105, 183, 228), rgb(173, 216, 230))";
 });
 background2.addEventListener("click", () => {
-    // document.body.style.backgroundImage = "url('img/gambarbukit.jpg')";
     document.body.style.background = "linear-gradient(125deg, rgb(236, 120, 207), rgb(173, 216, 230))";
 });
 background3.addEventListener("click", () => {
-    // document.body.style.backgroundImage = "url('img/gambarpantai.jpg')";
     document.body.style.background = "linear-gradient(125deg, rgb(94, 201, 90), rgb(238, 170, 82))";
 });
 background4.addEventListener("click", () => {
-    // document.body.style.backgroundImage = "url('img/gambarpantai2.jpg')";
     document.body.style.background = "linear-gradient(125deg, rgb(230, 79, 142), rgb(104, 201, 95))";
 });
 background5.addEventListener("click", () => {
-    // document.body.style.backgroundImage = "url('img/gambarlari.jpg')";
     document.body.style.background = "linear-gradient(125deg, rgb(82, 204, 174), rgb(172, 73, 218))";
 });
 
