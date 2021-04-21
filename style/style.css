@@ -6,7 +6,7 @@
 body {
     overflow: hidden;
     height: 100vh;
-    background-image: url(../img/bg-main-content.jpg);
+    background: linear-gradient(rgb(105, 183, 228), rgb(173, 216, 230));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,49 +99,121 @@ nav {
     justify-content: center;
     width: 100%;
     min-height: 85vh;
-    overflow: auto;
-    background: linear-gradient(rgb(105, 183, 228), lightblue);
+    overflow: hidden;
 }
 
 .box-home .box-inner {
+    background: url(../img/bghome.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    min-height: 70vh;
+    width: 95%;
+    min-height: 75vh;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 15px 2px rgba(83, 78, 78, 0.7);
 }
 
-.box-home .box-inner h2 {
-    position: relative;
-    display: block;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-.box-home .box-inner .time {
-    display: flex;
-}
-.box-home .box-inner .time div {
-    position: relative;
-    margin: 0 10px;
-}
-.box-home .box-inner .time div span {
-    position: relative;
-    display: block;
-    width: 100px;
-    height: 100px;
-    font-size: 3rem;
+.box-home .box-inner .select-background {
+    width: 35%;
+    margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.box-home .box-inner .time div span:nth-child(2) {
-    font-size: 1.5rem;
+.box-home .box-inner .select-background ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.box-home .box-inner .select-background ul li div {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+}
+
+.box-home .box-inner .select-background ul li div.bg1 {
+    cursor: pointer;
+    background: linear-gradient(rgb(105, 183, 228), rgb(173, 216, 230));
+}
+.box-home .box-inner .select-background ul li div.bg2 {
+    cursor: pointer;
+    background: linear-gradient(rgb(236, 120, 207), rgb(173, 216, 230));
+}
+.box-home .box-inner .select-background ul li div.bg3 {
+    cursor: pointer;
+    background: linear-gradient(rgb(94, 201, 90), rgb(238, 170, 82));
+}
+.box-home .box-inner .select-background ul li div.bg4 {
+    cursor: pointer;
+    background: linear-gradient(rgb(230, 79, 142), rgb(104, 201, 95));
+}
+.box-home .box-inner .select-background ul li div.bg5 {
+    cursor: pointer;
+    background: linear-gradient(rgb(82, 204, 174), rgb(172, 73, 218));
+}
+
+.box-home .box-inner .ket-waktu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    border-radius: 1.5rem;
+    box-shadow: inset -3px -3px 10px rgba(0, 0, 0, 0.3), -1px -1px 2px #0dcaf0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-home .box-inner .ket-waktu .keterangan-tanggal,
+.box-home .box-inner .ket-waktu .time {
+    transition: all 0.7s cubic-bezier(0.4, 1.28, 0.05, 1.07);
+    padding: 0 1rem;
+    font-size: 2rem;
+    width: 100%;
+}
+.box-home .box-inner .ket-waktu .keterangan-tanggal:hover,
+.box-home .box-inner .ket-waktu .time:hover,
+.box-home .box-inner .welcome h1:hover {
+    letter-spacing: 5px;
+}
+
+.box-home .box-inner .welcome {
+    color: aliceblue;
+}
+
+.box-home .box-inner .welcome h1 {
+    text-shadow: 3px 10px 8px rgba(13, 110, 253, 0.7), 0px -5px 16px rgba(13, 202, 240, 0.8);
+    font-size: 5rem;
+    font-weight: bold;
+    transition: all 0.7s cubic-bezier(0.4, 1.28, 0.05, 1.07);
+}
+
+.box-home .box-inner .welcome h2 {
+    font-size: 3rem;
+    text-shadow: 3px 10px 10px rgba(3, 3, 3, 0.7);
+}
+
+.box-home .box-inner .welcome h2 a#day {
+    text-shadow: none;
+}
+
 .box-day {
     width: 100%;
     min-height: 85vh;
@@ -290,6 +362,7 @@ nav {
 
 .message {
     width: 100%;
+    height: 85vh;
     background: linear-gradient(rgb(79, 196, 196), lightblue);
     overflow: hidden;
     margin: 250px 0;
@@ -337,7 +410,7 @@ form {
 .box-materi {
     width: 100%;
     min-height: 85vh;
-    background: linear-gradient(rgb(79, 196, 196), lightblue);
+    background: linear-gradient(rgba(79, 196, 196, 1), rgba(173, 216, 230, 1));
     margin: 500px 0;
     display: flex;
     flex-direction: column;
@@ -435,13 +508,6 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    #home {
-        position: fixed;
-        z-index: 3;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
     .container-custom {
         width: 99%;
     }

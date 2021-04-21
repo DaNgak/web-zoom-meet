@@ -20,10 +20,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fs-3">
                         <li class="nav-item mx-3">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#kontak-saran">Rate Us</a>
+                            <a class="nav-link tombolrateus" href="#kontak-saran">Rate Us</a>
                         </li>
                     </ul>
                 </div>
@@ -105,49 +105,49 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#algoprak"
+                            <a class="dropdown-item animasi-hover matkul-algoprak" href="#algoprak"
                                 >Praktikum Algoritma <br />
                                 Struktur Data</a
                             >
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#algoteo"
+                            <a class="dropdown-item animasi-hover matkul-algoteo" href="#algoteo"
                                 >Teori Algoritma <br />
                                 Struktur Data</a
                             >
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#bahasaenggres">Bahasa Inggris 2</a>
+                            <a class="dropdown-item animasi-hover matkul-bahasaenggres" href="#bahasaenggres">Bahasa Inggris 2</a>
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#basdatprak"
+                            <a class="dropdown-item animasi-hover matkul-basdatprak" href="#basdatprak"
                                 >Praktikum <br />
                                 Basis Data</a
                             >
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#basdatteo"
+                            <a class="dropdown-item animasi-hover matkul-basdatteo" href="#basdatteo"
                                 >Teori <br />
                                 Basis Data</a
                             >
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#sistemope">Sistem Operasi</a>
+                            <a class="dropdown-item animasi-hover matkul-sistemope" href="#sistemope">Sistem Operasi</a>
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#rpl"
+                            <a class="dropdown-item animasi-hover matkul-rpl" href="#rpl"
                                 >Rekayasa <br />
                                 Perangkat Lunak</a
                             >
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#agama">Agama Islam</a>
+                            <a class="dropdown-item animasi-hover matkul-agama" href="#agama">Agama Islam</a>
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#alin">Aljabar Linear</a>
+                            <a class="dropdown-item animasi-hover matkul-alin" href="#alin">Aljabar Linear</a>
                         </li>
                         <li class="pembatas">
-                            <a class="dropdown-item animasi-hover" href="#kwn">Kewarganegaraan</a>
+                            <a class="dropdown-item animasi-hover matkul-kwn" href="#kwn">Kewarganegaraan</a>
                         </li>
                     </ul>
                 </div>
@@ -217,42 +217,30 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="dropdown">
-                        <button class="btn btn-primary btn-lg dropdown-toogle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Zoom Meeting
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-
-                            <li class="list-group-item"><a class="dropdown-item animasi-hover" href="#senin">Senin</a></li>
-                            <li class="list-group-item"><a class="dropdown-item animasi-hover" href="#selasa">Selasa</a></li>
-                            <li class="list-group-item"><a class="dropdown-item animasi-hover" href="#rabu">Rabu</a></li>
-                            <li class="list-group-item"><a class="dropdown-item animasi-hover" href="#kamis">Kamis</a></li>
-                            <li class="list-group-item"><a class="dropdown-item animasi-hover" href="#jumat">Jum' at</a></li>
-                        </ul>
-
-
-                    </div>
-                    <li class="list-group-item active" aria-current="true">G-Form</li>
-                    <li class="list-group-item"><a class="animasi-hover" href="https://docs.google.com/forms/d/e/1FAIpQLSdNeSrAPPoOHARTxnmzBO09_fAQ8cUFLd-r36SoHa6ApIWFnA/alreadyresponded" target="_blank">BasDat Teori</a></li>
-                    <li class="list-group-item"><a class="animasi-hover" href="https://docs.google.com/forms/d/e/1FAIpQLSfHcBQWQ4eb6iCqDMrIiO-qZ85qAB-cUP208ycyl0RcT0uSwg/alreadyresponded" target="_blank">BasDat Praktikum</a></li> -->
             </div>
             <div class="main-content-dua">
-                <!-- <div id="home" class="box-home">
+                <div id="home-page" class="box-home">
                     <div class="box-inner">
-                        <h2>00</h2>
-                        <div class="time">
-                            <div>
-                                <span class="jam">00<span>Hours</span></span>
-                            </div>
-                            <div>
-                                <span class="menit">00<span>Minutes</span></span>
-                            </div>
-                            <div>
-                                <span class="detik">00<span>Seconds</span></span>
-                            </div>
+                        <div class="background-home"></div>
+                        <div class="ket-waktu">
+                            <div class="keterangan-tanggal"><span id="calender"></span></div>
+                            <div class="time"><span id="clock"></span></div>
+                        </div>
+                        <div class="welcome">
+                            <h1>Good <span id="keterangan-waktu"></span></h1>
+                            <h2>Today Is <a id="day"></a></h2>
+                        </div>
+                        <div class="select-background">
+                            <ul>
+                                <li><div class="bg1"></div></li>
+                                <li><div class="bg2"></div></li>
+                                <li><div class="bg3"></div></li>
+                                <li><div class="bg4"></div></li>
+                                <li><div class="bg5"></div></li>
+                            </ul>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="container-custom">
                     <div id="senin" class="box-day">
                         <div class="container">
@@ -286,7 +274,7 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Basis Data</h5>
                                             <p class="card-text">Dosen : Yoppy Yunhasnawa, S.ST., M.Sc.</p>
-                                            <a href="https://zoom.us/j/99931139441" class="btn zoom btn-primary" target="_blank">Join Zoom Sekarang</a>
+                                            <a href="https://zoom.us/j/91461900415" class="btn zoom btn-primary" target="_blank">Join Zoom Sekarang</a>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +343,7 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Praktikum Basis Data</h5>
                                             <p class="card-text">Dosen : Yoppy Yunhasnawa, S.ST., M.Sc.</p>
-                                            <a href="https://zoom.us/j/91461900415" class="btn zoom btn-primary" target="_blank">Join Zoom Sekarang</a>
+                                            <a href="https://zoom.us/j/99931139441" class="btn zoom btn-primary" target="_blank">Join Zoom Sekarang</a>
                                         </div>
                                     </div>
                                 </div>
@@ -420,29 +408,37 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1RardD4XNUD-qb0YCxCGnYKBCgThlxO-V/view?usp=sharing">Brute Force dan Divide Conquer</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1c38f1FDO-Cl45jM64DZhXs6rk4Gvvon8/view?usp=sharing">Sorting</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1DmZdxCLNQrsb5407rApLhJ_JGYXeAEtr/view?usp=sharing">Searching</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1G4BcQf1yEbDxHdCtJWAuxzMODEg02-KA/view?usp=sharing">Stack</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1PfgBMZZ9HAyH5DJ_F1pkhmVxv2FZwXhF/view?usp=sharing">Queue</a></li>
                         </ul>
                     </div>
 
                     <div class="box-materi" id="basdatteo">
                         <h2>Basis Data Teori</h2>
                         <ul>
-                            <!-- <li><a target="_blank" href="">Review Dasar Pemrograman</a></li>
-                            <li><a target="_blank" href="">Objek</a></li>
-                            <li><a target="_blank" href="">Array of Object</a></li>
-                            <li><a target="_blank" href="">Brute Force dan Divide Conquer</a></li>
-                            <li><a target="_blank" href="">Sorting</a></li>
-                            <li><a target="_blank" href="">Searching</a></li> -->
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1SqWOISXkmjwO0eByunWJpvl60Ngg4azC/view?usp=sharing">Pengantar Basis Data</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1IxL7ygWhmhRwC8OwGoBR4weW3mPUxfLr/view?usp=sharing">ERD Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1tQ61mWAyLRTtAU2HWE2MUF_GYXdH602K/view?usp=sharing">ERD Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1gaXeLJct5SZqwNgVkVxQaaY-nkdHMytd/view?usp=sharing">Pemetaan ERD Ke Model Relasional Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1HKABJQrxIsXr6hXsgLrP6-klwuTO0sPl/view?usp=sharing">Pemetaan ERD Ke Model Relasional Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1wQFWi_dAOxPZ45TuZYsiqeaAPnH8GRw4/view?usp=sharing ">Normalisasi Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1VsUtg6UT4BNba86tIkIw4f1YCidEItiE/view?usp=sharing">Normalisasi Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1jQXegVMEC1ob6Z8lXIyxrCj3G4rZvcmR/view?usp=sharing">MYSQL dan DLL</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1zOH9hq_VQIdkBUTJ9snnVeDQCdW6Tnti/view?usp=sharing">Select Query</a></li>
                         </ul>
                     </div>
                     <div class="box-materi" id="basdatprak">
                         <h2>Basis Data Praktikum</h2>
                         <ul>
-                            <!-- <li><a target="_blank" href="">Review Dasar Pemrograman</a></li>
-                            <li><a target="_blank" href="">Objek</a></li>
-                            <li><a target="_blank" href="">Array of Object</a></li>
-                            <li><a target="_blank" href="">Brute Force dan Divide Conquer</a></li>
-                            <li><a target="_blank" href="">Sorting</a></li>
-                            <li><a target="_blank" href="">Searching</a></li> -->
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1W0TKU13JI0KXI7lEQKbTrz8N97ucFVPM/view?usp=sharing">Konsep Basis Data</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/15D3WvSChtXDZ8FaqSGXjituicv7puT_H/view?usp=sharing">ERD Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1iFIWvmKtVOYXvk9aIqhMvNLIWQC6V7fj/view?usp=sharing">ERD Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1VS_fCcQRwl30XRlAYPEgSI5hql8C45--/view?usp=sharing">Latihan Soal ERD</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1AmRzpLgusWqOkFwkqlayvgJlROKUWlbs/view?usp=sharing">Pemetaan ERD Ke Model Relasional Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1NRzq5jXxi5ooz7M1C1YxH8v6nyLWT_8h/view?usp=sharing">Pemetaan ERD Ke Model Relasional Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1z0KdgZqbpu68jsiV64JdveJ-XgdoI9t-/view?usp=sharing">Normalisasi Bagian 1</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1RlJ26f9HKrBiLVJ7Jfn9nIUUHzted4um/view?usp=sharing">Normalisasi Bagian 2</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1XNypKHhRZq1hgBhLrsmSF1-K-Kve6dkG/view?usp=sharing">MYSQL dan DLL</a></li>
                         </ul>
                     </div>
                     <div class="box-materi" id="rpl">
@@ -454,6 +450,8 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1n06V22nUP5AztUaxqoiaOYKrkhosUdmW/view?usp=sharing">Bab 4 Context Diagram Dan Data Flow Diagram</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1QoHBZn9pFjfNwCRWMGY1hdUSwPHG9--4/view?usp=sharing">Bab 5 Pemodelan Data Pada Basis Data Relasional</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1qqCzaGzJgYTJqRHtfLpIRfYKDqpgwa06/view?usp=sharing">Bab 6 Unified Modelling Language</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1Q9rP6yKeiFO4tYVAviwhjTk9jdfUI5Sp/view?usp=sharing">Bab 7 Sequence Diagram</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1SV0O_pOXP7a-dhOTI9K3mHw9CqfuHgwG/view?usp=sharing">Bab 8 Class Diagram</a></li>
                         </ul>
                     </div>
                     <div class="box-materi" id="sistemope">
@@ -463,6 +461,9 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/15vF89D9LAS_Gqmo68PgN1Drpv4wrYJEx/view?usp=sharing">Bab 2 Struktur Sistem Operasi</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1xxkIgHw7AMaq__fUP2QlSjqtMq-8UTV-/view?usp=sharing">Bab 3 Proses Proses</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/122x_1mpfj9u2sVMC1ztYY_7WRuH9-ipH/view?usp=sharing">Bab 4 Penjadwalan CPU</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1kWK_UQL9rxHCytlzWGseSZk1B5xumUTc/view?usp=sharing">Bab 5 Sinkronisasi Proses</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1iiv3d8CFzo6cxXKzwsAzv83GwWOQlLAn/view?usp=sharing">Bab 6 Deadlock</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1w4rbYijceKh6W68u5YfYB-qgfSL9sf0m/view?usp=sharing">Bab 7 Virtual Memory</a></li>
                         </ul>
                         <h3>Materi PPT</h3>
                         <ul>
@@ -471,6 +472,8 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1re3lmreIEM73us2mS4UeVEJyne1EZWrC/view?usp=sharing">Proses-Proses</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1ntdXX1Q3l0Tnbdih4TGxik_k2h6kg53f/view?usp=sharing">Thread</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1sXyAe3KnTm3_7L7udB5SR2vEA9dy9zyq/view?usp=sharing">Penjadwalan CPU</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1NMmjfPirpU5d9vEwvuliyOKUlyiYMU8b/view?usp=sharing">Sinkronisasi Proses</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1SV0O_pOXP7a-dhOTI9K3mHw9CqfuHgwG/view?usp=sharing">Deadlock</a></li>
                         </ul>
                     </div>
                     <div class="box-materi" id="alin">
@@ -488,6 +491,7 @@
                         <h2>Kewarganegaraan</h2>
                         <h3 class="tidakadamateri">Belum Ada Materi!!!</h3>
                     </div>
+
                     <div class="box-materi" id="algoprak">
                         <h2>Algortima dan Struktur Data Teori</h2>
                         <ul>
@@ -497,6 +501,9 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1BQDSmh1DgkAPnRB89UWa-HdsV7N2POAy/view?usp=sharing">Brute Force dan Divide Conquer</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1TpS9Si43obfBtTIS7GrmSH1bLVC4In88/view?usp=sharing">Sorting</a></li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1UhE8YD970Jb1nROEFgazr8TuETx1JVev/view?usp=sharing">Searching</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/18E4me1qtcMkuUBg9ImSRZ5GMgtAFlP8C/view?usp=sharing">Stack</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1uMhQQ2j-LQT4aK03OFe66EvT9rfm795C/view?usp=sharing">Queue</a></li>
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1qwvoLWVibouxjP_gmpmhdXZPhh8YM6Bh/view?usp=sharing">Single Linked List</a></li>
                         </ul>
                     </div>
 
@@ -512,7 +519,7 @@
                         </ul>
                     </div>
 
-                    <div id="kontak-saran" class="message">
+                    <div id="kontak-saran" class="message d-none">
                         <h2>Rate Us</h2>
                         <form name="kontakandsaran">
                             <div class="mb-3 bagian-form">
